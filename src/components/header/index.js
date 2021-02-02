@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import styles from './Header.module.scss';
 import HomeOutlinedIcon from '@material-ui/icons/HomeOutlined';
 import SendOutlinedIcon from '@material-ui/icons/SendOutlined';
@@ -11,13 +12,13 @@ const Header = () => {
             <div className={styles.Header__logo}>Instagram</div>
             <input className={styles.Header__search} type="text" placeholder="Search"/>
             <div className={styles.Header__wrapper}>
-                <div className={styles.Header__item}>
+                <Link to="/" className={styles.Header__item}>
                     <HomeOutlinedIcon/>
-                </div>
+                </Link>
                 <div className={styles.Header__item}><SendOutlinedIcon/></div>
                 <div className={styles.Header__item}><ExploreOutlinedIcon/></div>
                 <div className={styles.Header__item}><FavoriteBorderIcon/></div>
-                <div className={styles.Header__item}></div>
+                <Link to="/profile" className={styles.Header__item}></Link>
             </div>
         </div>
     )
