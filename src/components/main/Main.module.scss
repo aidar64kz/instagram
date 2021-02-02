@@ -1,0 +1,57 @@
+.Main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    padding-top:100px;
+    background-color: #fafafa;
+    
+
+    &__recommendations {
+        width: 100%;
+        height: 100vh;
+        background-color: #dbdbdb;
+        position: fixed;
+        top: 55px;
+        z-index: 0;
+        right: 0;
+        left: 59.5%;
+        padding: 100px 0 0 50px;
+
+    }
+
+    &__wrapper {
+        padding-left: 200px;
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+    }
+
+    &__userLogo{
+        width: 32px;
+        height: 32px;
+        background-color: black;
+        border-radius: 50%;
+        margin-right: 30px;
+    }
+
+    &__userData {
+        margin-right: 60px;
+    }
+
+    &__userName {
+        font-weight: 700;
+    }
+
+    &__switch {
+        color: #0095f6;
+        cursor: pointer;
+
+        &:hover{
+            opacity: 0.7;
+
+        }
+    }
+}
+
